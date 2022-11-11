@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ideal UX</title>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script type="text/javascript" src="video_swap.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Ideal UX</h1>
+			A desktop environment experience that doesn't exist <small>(yet?)</small>
+		</header>
+		<figure id="top-video">
+			<video src="videos/mock_desktop_v10.mp4" id="video-desktop" muted="muted" autoplay="autoplay">Your browser does not support video playing.</video>
+			<video src="videos/mock_mobile_v4.mp4" id="video-mobile" class="hidden" muted="muted">Your browser does not support videos.</video>
+		</figure>
+		<section>
+			<h2>What is this?</h2>
+			<p>
+				Ideal UX is my creatively named project to design my ideal system UX.  It draws inspiration from various patterns across years of Android, Windows, Chrome OS, iOS, MacOS, Gnome, KDE, and others, as well as patterns I would like to see but have not.  A lot of my demos and mock-ups use a lot of Material Design and Fluent Design materials and icons, but the UX patterns are more important than the UI, and you could adapt them for a different design language while keeping the most important parts intact.
+			</p>
+			<p>
+				At time of writing, this project is unfinished, not really available to try in any interactive format, and not being worked on consistently, but I wanted to put this WIP up, to get the ideas and principles behind it out there.
+			</p>
+		</section>
+		<section>
+			<h2>Consistency without compromises</h2>
+			<p>
+				A consistent UX from mobile to tablet to desktop is a laudable goal, but on <!--Android 4.2+, i(Pad)OS, recent versions of Chrome OS, and to an extent, Windows 8--> many platforms, it feels as though the designers thought the only choices were to make the tablet experience more like a big smartphone or a traditional desktop.  One of my goals with Ideal UX was to provide a more consistent experience across form factors and interaction methods.
+			</p>
+			<p>
+				That also means the same interface components and touch gestures come from the same parts of the screen across all form factors, with the system bar always at the top and window controls always at the bottom.
+			</p>
+			<figure class="col2">
+				<div class="img-pair">
+					<img src="mocks/mock_desktop_v9_launcher.png" alt="On a large screen, the launcher shows multiple blocks of shortcuts." class="desktop" />
+					<img src="mocks/mock_mobile_v3_launcher.png" alt="On a small screen, the launcher fills the screen with one block of shortcuts at a time." class="mobile" />
+				</div>
+				<div class="img-pair">
+					<img src="mocks/mock_desktop_v9_notifs_qs_media.png" alt="On a large screen, the notification and quick settings panels show next to each other."  class="desktop"/>
+					<img src="mocks/mock_mobile_v3_notifs.png" alt="On a small screen, the notification panel fills the screen with quick settings at the top." class="mobile" />
+				</div>
+			</figure>
+		</section>
+		<section>
+			<h2>No &ldquo;home screen&rdquo;</h2>
+			<p>
+				On most current mobile platforms, launching an app requires returning to a home screen, suspending the app you were using.  Additionally, closing all apps returns you to the home screen.  Ideal UX takes an approach more akin to desktop conventions, where the launcher is something you open over top of the current activity, not in place of it.  It remains a customizable space where you can arrange apps and widgets as you like, but it exists to be the launchpad for your next activity, not a place to spend time in.
+			</p>
+			<p>
+				In that same vein, closing all open apps returns you to your desktop, not the launcher.  You can choose to open the launcher or notification panel and start another activity, but unlike a home screen of apps and widgets, it also provides you a moment to decide if you want to step away from your device for the moment.
+			</p>
+			<figure class="img-pair">
+				<img src="mocks/mock_desktop_v9_desktop.png" alt="On a large screen, with all apps closed, there is only the status bar with the time, Internet icon, and battery icon." class="desktop" />
+				<img src="mocks/mock_mobile_v4_desktop.png" alt="On a small screen, with all apps closed, there is only the status bar with the date, time, Internet icon, and battery icon." class="mobile" />
+			</figure>
+		</section>
+		<section>
+			<h2>Focused notifications</h2>
+			<p>
+				Past approaches of other platforms have ranged from one extreme of a cluttered notification bar that does little to separate high- and low priority notifications, to the other extreme of only showing the number of unread notifications, which also does not differentiate high- and low priority.  At the most extreme, they give you no indication of unread notifications until you open the notification panel.
+			</p>
+			<p>
+				Ideal UX takes the refinements of Android 11 a step further.  High priority conversations show the profile picture of the person contacting you, other conversations and higher priority notifications show the icons of the apps they are from, and lower priority notifications are grouped into the number unread.  Snoozed notifications are removed from the count until they return, and when in do-not-disturb mode, no icons are shown at all.
+			</p>
+			<p>
+				Ongoing activites, such as calls, map navigation, media playing, and timers can have small chips with additional information next to them (such as next turn direction or time remaining) which pop up the associated notification when selected.
+			</p>
+			<figure class="img-pair">
+				<img src="mocks/mock_desktop_v9_heads_up_notifs.png" alt="The notification panel shows a Slack notification and 1 lower priority notification, as well as heads up notifications for a text message and a news headline." class="desktop" />
+			</figure>
+		</section>
+		<section>
+			<a href="sketches">
+				<h2>Draft sketches &rsaquo;</h2>
+			</a>
+		</section>
+		<section>
+			<h2>To-dos:</h2>
+			<p>This project is incomplete.  These are some of the things I want to address in the future.</p>
+			<ul>
+				<li>Finish mock-ups of app windows and window management</li>
+				<li>Add all apps list sectioning by app name or category</li>
+				<li>Finish interactive demo</li>
+				<li>Refine animation curves in mock-up</li>
+				<li>Add compressed thumbnails to this page</li>
+			</ul>
+		</section>
+		<footer>
+			By <a href="https://zmyaro.com" target="_blank">Zachary Yaro</a>
+		</footer>
+	</body>
+</html>
