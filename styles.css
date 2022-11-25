@@ -147,7 +147,8 @@ figure {
 	position: relative;
 	height: 512px;
 	height: min(512px, 50vh);
-	margin: 1em 0 -1em; /* To counter the top padding of the <section> below. */
+	margin: 1em 0 -1em; /* Counter the top padding of the <section> below. */
+	overflow: hidden; /* Prevent overflow during transition effects. */
 }
 	#top-video video {
 		position: absolute;
